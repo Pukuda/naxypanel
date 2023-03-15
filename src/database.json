@@ -434,6 +434,11 @@
       "afkTime": -1,
       "afkReason": "",
       "limit": 100
+    },
+    "19709000474@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": "Infinity"
     }
   },
   "chats": {
@@ -594,6 +599,11 @@
       "mute": false,
       "antilink": false,
       "nsfw": false
+    },
+    "19709000474@s.whatsapp.net": {
+      "mute": false,
+      "antilink": false,
+      "nsfw": false
     }
   },
   "database": {},
@@ -637,6 +647,14 @@
       "templateLocation": false,
       "templateDocument": true,
       "onlyGroup": true
+    },
+    "19709000474@s.whatsapp.net": {
+      "status": 0,
+      "autobio": false,
+      "templateImage": false,
+      "templateVideo": false,
+      "templateLocation": false,
+      "templateDocument": true
     }
   },
   "others": {
