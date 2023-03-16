@@ -271,7 +271,7 @@ fs.unlinkSync(asw)
 if (db.data.chats[m.chat].antilink) {
 if (budy.match(`chat.whatsapp.com`)) {
 m.reply(`「 *ANTI LINK* 」\n\n*Kamu terdeteksi mengirim link group*, *maaf kamu akan di kick‼️,yang mau juga silahkan kirim link‼️*`)
-if (!isBotAdmins) return m.reply(`*Bot aja bukan admin anj*`)
+if (!isBotAdmins) return m.reply(`*Bot aja bukan admin gob`)
 let gclink = (`https://chat.whatsapp.com/`+await tio.groupInviteCode(m.chat))
 let isLinkThisGc = new RegExp(gclink, 'i')
 let isgclink = isLinkThisGc.test(m.text)
@@ -704,7 +704,7 @@ case "addusr": {
 
 if (!isCreator) return m.reply(`HAI KAK NI KHUSUS OWNER Panel Naxybot`)
 let t = text.split(',');
-if (t.length < 3) return m.reply(`*Format salah kak danz!*
+if (t.length < 3) return m.reply(`*Format salah kak!*
 
 
 
@@ -713,7 +713,7 @@ ${prefix + command} email,username,name,number/tag`);
 let username = t[1];    
 let name = t[2];
 let u = m.quoted ? m.quoted.sender : t[3] ? t[3].replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.mentionedJid[0];
-if (!u) return m.reply(`*Format salah kak danz!*
+if (!u) return m.reply(`*Format salah kak!*
 
 Penggunaan:
 ${prefix + command} email,username,name,number/tag`);
@@ -777,7 +777,11 @@ tio.sendMessage(u, { text: `*BERIKUT DETAIL AKUN PANEL ANDA*\n
 
 _Selalu backup data_
 _Jangan beritahukan user password kepada orang lain ( kami tidak bertanggung jawab dengan hal ini_
-_*sebelumnya kami mengalami kasus dimana user kami menjual akunnya ke orang lain dan selang beberapa hari meminta kami untuk reset password hal ini membuat nama panel kami dibilang scam untuk menanggulangi hal ini kami tidak akan lagi membantu melakukan reset password.*_`,
+_*sebelumnya kami mengalami kasus dimana user kami menjual akunnya ke orang lain dan selang beberapa hari meminta kami untuk reset password hal ini membuat nama panel kami dibilang scam untuk menanggulangi hal ini kami tidak akan lagi membantu melakukan reset password.*_
+
+*Garansi* : *_5 Hari_*
+
+*Ada masalah? Chat Owner* : *wa.me/6283826733522*`,
 })
 }
 break
@@ -942,7 +946,7 @@ let f = await fetch(domain + "/api/application/servers", {
 "INST": "npm",
 "USER_UPLOAD": "0",
 "AUTO_UPDATE": "0",
-"CMD_RUN": "npm start"
+"CMD_RUN": "node run.js"
 },
 "limits": {
 "memory": memo_disk[0],
